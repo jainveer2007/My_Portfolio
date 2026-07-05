@@ -9,6 +9,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import SideTerminal from "./components/SideTerminal";
 
 export default function App() {
   const [booted, setBooted] = useState(false);
@@ -74,6 +75,7 @@ export default function App() {
               </footer>
             </main>
           </div>
+          <SideTerminal active={active} />
         </div>
         <StatusBar active={activeLabel} line={line} />
       </div>
