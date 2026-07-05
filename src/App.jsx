@@ -68,11 +68,6 @@ export default function App() {
               <Skills />
               <Projects />
               <Contact />
-              <footer className="px-5 sm:px-10 lg:px-16 py-8 text-center text-xs text-text-dim border-t border-border-soft">
-                <span className="text-comment">{"/* "}</span>
-                built with React, Vite &amp; Tailwind CSS
-                <span className="text-comment">{" */"}</span>
-              </footer>
             </main>
           </div>
           <SideTerminal active={active} />
