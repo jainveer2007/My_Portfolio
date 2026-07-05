@@ -4,7 +4,7 @@
 
 export const profile = {
   // Basic identity
-  name: "Veer Jain",
+  name: "VEER JAIN",
   role: "Software Developer",
   tagline: "Competitive Programmer & Aspiring Software Developer.",
 
