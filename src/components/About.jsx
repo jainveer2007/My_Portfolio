@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { VscLocation, VscMail, VscLinkExternal } from "react-icons/vsc";
+import { VscLinkExternal } from "react-icons/vsc";
 import { SiLeetcode, SiCodeforces, SiCodechef } from "react-icons/si";
 import { profile } from "../data/profile";
 import { FileHeader } from "./CodeChrome";
@@ -37,7 +37,7 @@ const codingPlatforms = [
 
 function CodingProfiles() {
   const entries = codingPlatforms.filter(
-    (p) => profile.socials && profile.socials[p.key],
+    (p) => profile.socials && profile.socials[p.key]
   );
 
   if (!entries.length) return null;
@@ -51,6 +51,7 @@ function CodingProfiles() {
       className="w-full lg:w-80 shrink-0"
     >
       <div className="overflow-hidden rounded-xl border border-border bg-editor-light/70 backdrop-blur-md shadow-xl shadow-cyan-500/5">
+
         <div className="flex items-center justify-between border-b border-border-soft bg-editor px-5 py-4">
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-text-dim">
@@ -74,33 +75,20 @@ function CodingProfiles() {
               href={profile.socials[key]}
               target="_blank"
               rel="noreferrer"
-              whileHover={{
-                y: -4,
-                scale: 1.02,
-              }}
-              transition={{
-                duration: 0.2,
-              }}
+              whileHover={{ y: -4, scale: 1.02 }}
+              transition={{ duration: 0.2 }}
               className="group flex items-center justify-between rounded-xl border border-border-soft bg-editor px-4 py-4 transition-all hover:border-accent-blue/40 hover:bg-editor-light"
             >
               <div className="flex items-center gap-4">
                 <div
                   className="flex h-11 w-11 items-center justify-center rounded-xl"
-                  style={{
-                    backgroundColor: `${color}20`,
-                  }}
+                  style={{ backgroundColor: `${color}20` }}
                 >
-                  <Icon
-                    className="h-5 w-5"
-                    style={{
-                      color,
-                    }}
-                  />
+                  <Icon className="h-5 w-5" style={{ color }} />
                 </div>
 
                 <div>
                   <h4 className="font-medium text-text">{label}</h4>
-
                   <p className="text-xs text-text-dim">{description}</p>
                 </div>
               </div>
@@ -114,10 +102,10 @@ function CodingProfiles() {
 
         <div className="border-t border-border-soft bg-editor/50 px-5 py-4">
           <p className="text-xs leading-6 text-text-dim">
-            Building strong problem-solving skills through consistent
-            competitive programming and algorithm practice.
+            Building strong problem-solving skills through consistent competitive programming and algorithm practice.
           </p>
         </div>
+
       </div>
     </motion.div>
   );
@@ -164,41 +152,12 @@ export default function About() {
               {profile.bio.map((para, i) => (
                 <p key={i} className="text-text-dim">
                   <span className="text-comment">// </span>
-
                   {para}
                 </p>
               ))}
-
-              <div className="mt-6 h-px bg-border-soft" />
-
-              <p className="flex items-center gap-2 text-text-dim">
-                <VscLocation className="h-4 w-4 text-accent-cyan" />
-
-                <span className="text-variable">location</span>
-
-                <span className="text-text">:</span>
-
-                <span className="text-string">"{profile.location}"</span>
-              </p>
-
-              <p className="flex items-center gap-2 text-text-dim">
-                <VscMail className="h-4 w-4 text-accent-cyan" />
-
-                <span className="text-variable">email</span>
-
-                <span className="text-text">:</span>
-
-                <a
-                  href={`mailto:${profile.email}`}
-                  className="text-string transition-colors hover:text-accent-blue"
-                >
-                  "{profile.email}"
-                </a>
-              </p>
             </div>
 
             <div className="pl-6 text-text">{"};"}</div>
-
             <div className="text-text">{"}"}</div>
           </div>
         </motion.div>
