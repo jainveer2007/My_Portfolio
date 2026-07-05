@@ -2,66 +2,110 @@ import { motion } from "framer-motion";
 import { skillGroups } from "../data/skills";
 import { FileHeader } from "./CodeChrome";
 
-function SkillBar({ name, level, delay }) {
-  return (
-    <div>
-      <div className="flex justify-between text-xs mb-1.5">
-        <span className="text-text">{name}</span>
-        <span className="text-text-dim">{level}%</span>
-      </div>
-      <div className="h-1.5 w-full bg-editor-light rounded-full overflow-hidden border border-border-soft">
-        <motion.div
-          className="h-full bg-accent-blue rounded-full"
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay, ease: "easeOut" }}
-        />
-      </div>
-    </div>
-  );
-}
-
 export default function Skills() {
+
   return (
-    <section id="skills" className="px-5 sm:px-10 lg:px-16 py-20 border-t border-border-soft">
+
+    <section
+      id="skills"
+      className="border-t border-border-soft px-5 py-20 sm:px-10 lg:px-16"
+    >
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="max-w-4xl"
+        className="max-w-6xl"
       >
-        <FileHeader name="Skills.json" meta="JSON" />
 
-        <div className="font-mono text-sm text-text-dim mb-6">
-          <span className="text-text">{"{"}</span>
+        <FileHeader
+          name="Skills.json"
+          meta="JSON"
+        />
+
+        <div className="mt-5 rounded-xl border border-border bg-editor-light/30 p-6 backdrop-blur-sm">
+
+          <div className="mb-8 font-mono text-sm text-text">
+            {"{"}
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+
+            {skillGroups.map((group, index) => (
+
+              <motion.div
+                key={group.category}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.4,
+                  delay: index * 0.1,
+                }}
+                className="rounded-xl border border-border-soft bg-editor p-5 hover:border-accent-blue/40 transition-all"
+              >
+
+                <div className="mb-5 font-mono">
+
+                  <span className="text-variable">
+                    "{group.category}"
+                  </span>
+
+                  <span className="text-text">
+                    :
+                  </span>
+
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+
+                  {group.items.map((skill, i) => (
+
+                    <motion.div
+                      key={skill}
+                      initial={{
+                        opacity: 0,
+                        scale: 0.8,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        scale: 1,
+                      }}
+                      viewport={{ once: true }}
+                      transition={{
+                        delay: i * 0.05,
+                      }}
+                      whileHover={{
+                        y: -4,
+                      }}
+                      className="rounded-lg border border-border-soft bg-editor-light px-4 py-2 text-sm text-text transition-all hover:border-accent-blue hover:text-accent-blue"
+                    >
+
+                      {skill}
+
+                    </motion.div>
+
+                  ))}
+
+                </div>
+
+              </motion.div>
+
+            ))}
+
+          </div>
+
+          <div className="mt-8 font-mono text-sm text-text">
+            {"}"}
+          </div>
+
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10">
-          {skillGroups.map((group, gi) => (
-            <div key={group.category}>
-              <div className="font-mono text-sm mb-4">
-                <span className="text-variable">"{group.category}"</span>
-                <span className="text-text">: [</span>
-              </div>
-              <div className="space-y-4 pl-4">
-                {group.items.map((item, i) => (
-                  <SkillBar
-                    key={item.name}
-                    name={item.name}
-                    level={item.level}
-                    delay={gi * 0.05 + i * 0.06}
-                  />
-                ))}
-              </div>
-              <div className="font-mono text-sm text-text mt-3">]</div>
-            </div>
-          ))}
-        </div>
-
-        <div className="font-mono text-sm text-text mt-6">{"}"}</div>
       </motion.div>
+
     </section>
+
   );
+
 }

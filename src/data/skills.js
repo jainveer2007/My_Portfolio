@@ -1,37 +1,38 @@
-// Skills.json — grouped by category, edit freely.
-// "level" is out of 100 and only drives the little proficiency bar.
-
 export const skillGroups = [
   {
-    category: "languages",
+    category: "Languages",
     items: [
-      { name: "C++", level: 90 },
-      { name: "JavaScript", level: 82 },
-      { name: "Python", level: 75 },
-      { name: "C", level: 60 },
+      "C++",
+      "JavaScript",
+      "Python",
+      "C",
     ],
   },
   {
-    category: "frontend",
+    category: "Frontend",
     items: [
-      { name: "React", level: 92 },
-      { name: "Tailwind CSS", level: 80 },
-      { name: "Html", level: 88 },
+      "React",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
     ],
   },
   {
-    category: "backend",
+    category: "Backend",
     items: [
-      { name: "Node.js", level: 85 },
-      { name: "Express", level: 80 },
-      { name: "MongoDB", level: 75 },
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
     ],
   },
   {
-    category: "tools",
+    category: "Tools",
     items: [
-      { name: "Git & GitHub", level: 90 },
-      { name: "VS Code", level: 99 },
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
     ],
   },
 ];
