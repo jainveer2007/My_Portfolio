@@ -13,15 +13,5 @@ export const projects = [
     demo: "https://my-portfolio-tau-rouge-33.vercel.app",
     status: "shipped",
   },
-  {
-    id: 2,
-    name: "Upcomming..",
-    title: "Upcomming..",
-    description:
-      "Building a backend-driven deployment system using Node.js with automated build and deployment workflows.",
-    stack: ["Next.js", "TypeScript", "etc."],
-    repo: "https://github.com/your-username/market-pulse",
-    demo: "https://your-marketpulse-demo.vercel.app",
-    status: "shipped",
-  },
+  
 ];
