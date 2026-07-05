@@ -9,14 +9,14 @@ export const projects = [
     description:
       "Designed and developed a personal portfolio website to showcase my projects, skills, and journey as an aspiring software developer, with a clean and responsive user interface..",
     stack: ["React", "TailwindCss"],
-    repo: "https://github.com/your-username/task-flow",
-    demo: "https://your-taskflow-demo.vercel.app",
+    repo: "https://github.com/jainveer2007",
+    demo: "https://my-portfolio-tau-rouge-33.vercel.app",
     status: "shipped",
   },
   {
     id: 2,
-    name: "Up comming..",
-    title: "Up comming..",
+    name: "Upcomming..",
+    title: "Upcomming..",
     description:
       "Building a backend-driven deployment system using Node.js with automated build and deployment workflows.",
     stack: ["Next.js", "TypeScript", "etc."],
