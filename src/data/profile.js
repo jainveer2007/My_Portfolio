@@ -21,7 +21,8 @@ export const profile = {
   // Photo: drop your image at src/assets/profile-photo.jpg (or .png)
   // and this path will pick it up automatically. Until then, a
   // placeholder avatar is shown.
-  photo: "https://ibb.co/QFFY5MTz",
+  photo: "https://i.ibb.co/JRRrhHG0/Whats-App-Image-2026-06-29-at-8-00-47-AM.jpg",
+  //photo: "https://i.ibb.co/nssGYKNd/72b80c16-8fb9-480c-b812-ac47d3c69958.jpg",
 
   // Resume/CV — put the file in the `public` folder and point to it here
   resumeUrl: "/resume.pdf",
