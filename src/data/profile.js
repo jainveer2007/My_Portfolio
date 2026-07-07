@@ -17,7 +17,7 @@ export const profile = {
   //photo: "https://i.ibb.co/nssGYKNd/72b80c16-8fb9-480c-b812-ac47d3c69958.jpg",
 
 
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/My.resume",
 
   // Contact
   email: "jainveer2007@gmail.com",
@@ -33,10 +33,10 @@ export const profile = {
   socials: {
     github: "https://github.com/jainveer2007",
     linkedin: "https://www.linkedin.com/in/veer-jain-02133436b/",
-    leetcode: "https://leetcode.com/your-username",
-    codeforces: "https://codeforces.com/profile/your-handle",
-    codechef: "https://www.codechef.com/users/your-username",
-    codolio: "https://codolio.com/profile/your-username",
+    leetcode: "https://leetcode.com/",
+    codeforces: "https://codeforces.com/",
+    codechef: "https://www.codechef.com/",
+    codolio: "https://codolio.com/",
 },
   // Availability badge shown near the hero / contact section
   availableForWork: true,
