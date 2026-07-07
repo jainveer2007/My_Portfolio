@@ -9,8 +9,8 @@ export const projects = [
     description:
       "Designed and developed a personal portfolio website to showcase my projects, skills, and journey as an aspiring software developer, with a clean and responsive user interface..",
     stack: ["React", "TailwindCss"],
-    repo: "https://github.com/jainveer2007",
-    demo: "https://my-portfolio-tau-rouge-33.vercel.app",
+    repo: "https://github.com/jainveer2007/My_Portfolio",
+    demo: "https://veerjain.vercel.app/",
     status: "shipped",
   },
   
