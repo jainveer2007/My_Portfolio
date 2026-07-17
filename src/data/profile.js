@@ -6,7 +6,7 @@ export const profile = {
 
   bio: [
     "I'm an Aspiring Software Developer and Competitive Programmer, studying Computer Science at Manipal University Jaipur.",
-    "Solved 500+ DSA & competitive programming problems combined across LeetCode, Codeforces, Coding Ninjas etc.",
+    "Solved 600+ DSA & competitive programming problems combined across LeetCode, Codeforces, Coding Ninjas etc.",
     "Comfortable across the web stack — React, HTML, CSS & Tailwind on the front, currently leveling up with Node.js on the back.",
   ],
 
