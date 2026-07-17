@@ -10,28 +10,28 @@ const codingPlatforms = [
     label: "LeetCode",
     Icon: SiLeetcode,
     color: "#ffa116",
-    description: "",
+    description: "150+ Questions solved",
   },
   {
     key: "codeforces",
     label: "Codeforces",
     Icon: SiCodeforces,
     color: "#1f8acb",
-    description: "",
+    description: "100+ Questions solved",
   },
   {
     key: "codechef",
     label: "CodeChef",
     Icon: SiCodechef,
     color: "#8b4513",
-    description: "",
+    description: "200+ Questions solved",
   },
   {
     key: "codolio",
     label: "Codolio",
     Icon: VscLinkExternal,
     color: "#4fc1ff",
-    description: "500+ Questions solved",
+    description: "600+ Questions solved",
   },
 ];
 
