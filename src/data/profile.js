@@ -17,7 +17,7 @@ export const profile = {
   //photo: "https://i.ibb.co/nssGYKNd/72b80c16-8fb9-480c-b812-ac47d3c69958.jpg",
 
 
-  resumeUrl: "/My.resume",
+  // resumeUrl: "/My.resume",
 
   // Contact
   email: "jainveer2007@gmail.com",
