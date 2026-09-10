@@ -17,7 +17,7 @@ const codingPlatforms = [
     label: "Codeforces",
     Icon: SiCodeforces,
     color: "#1f8acb",
-    description: "100+ Questions solved",
+    description: "150+ Questions solved",
   },
   {
     key: "codechef",
