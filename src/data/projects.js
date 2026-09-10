@@ -13,5 +13,16 @@ export const projects = [
     demo: "https://veerjain.vercel.app/",
     status: "shipped",
   },
+  {
+    id: 1,
+    name: "ORCA Marine",
+    title: "ORCA Marine",
+    description:
+      "Designed and developed an Agentic AI-powered conversational platform that enables users to access real-time marine and satellite data through natural language, delivering intelligent, explainable recommendations on fishing zones, sea safety, and weather alerts, built using Agentic AI, Node.js, React, and SQL.",
+    stack: ["Agentic AI", "Node.js", "SQl", "React.js"],
+    repo: "https://github.com/jainveer2007/ORCA_Frontend",
+    demo: "https://orca-frontend-flax.vercel.app/",
+    status: "shipped",
+  },
   
 ];

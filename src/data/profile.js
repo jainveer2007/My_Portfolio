@@ -14,7 +14,7 @@ export const profile = {
 
 
   photo: "https://i.ibb.co/JRRrhHG0/Whats-App-Image-2026-06-29-at-8-00-47-AM.jpg",
-  //photo: "https://i.ibb.co/nssGYKNd/72b80c16-8fb9-480c-b812-ac47d3c69958.jpg",
+  // photo: "https://i.ibb.co/nssGYKNd/72b80c16-8fb9-480c-b812-ac47d3c69958.jpg",
 
 
   // resumeUrl: "/My.resume",
