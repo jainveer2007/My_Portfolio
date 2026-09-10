@@ -31,7 +31,7 @@ const codingPlatforms = [
     label: "Codolio",
     Icon: VscLinkExternal,
     color: "#4fc1ff",
-    description: "600+ Questions solved",
+    description: "650+ Questions solved",
   },
 ];
 
