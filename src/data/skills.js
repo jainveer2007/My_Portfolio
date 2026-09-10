@@ -6,6 +6,7 @@ export const skillGroups = [
       "JavaScript",
       "Python",
       "C",
+      "Java",
     ],
   },
   {
@@ -22,6 +23,7 @@ export const skillGroups = [
     items: [
       "Node.js",
       "Express.js",
+      "SQL",
       "MongoDB",
       "REST API",
     ],
