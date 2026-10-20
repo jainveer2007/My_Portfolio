@@ -10,6 +10,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import SideTerminal from "./components/SideTerminal";
+import ClickSpark from "./components/ClickSpark";
 
 export default function App() {
   const [booted, setBooted] = useState(false);
@@ -53,7 +54,15 @@ export default function App() {
   return (
     <>
       <BootScreen onDone={() => setBooted(true)} />
-      <div className="h-screen w-screen flex flex-col overflow-hidden bg-editor">
+      <ClickSpark
+        sparkColor="#4fc1ff"
+        sparkSize={12}
+        sparkRadius={20}
+        sparkCount={8}
+        duration={400}
+        glow={0.5}
+        className="h-screen w-screen flex flex-col overflow-hidden bg-editor"
+      >
         <TitleBar />
         <div className="flex flex-1 min-h-0">
           <ActivityBar />
@@ -73,7 +82,7 @@ export default function App() {
           <SideTerminal active={active} />
         </div>
         <StatusBar active={activeLabel} line={line} />
-      </div>
+      </ClickSpark>
     </>
   );
 }
